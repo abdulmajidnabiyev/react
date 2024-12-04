@@ -1,0 +1,280 @@
+.metro {
+    background-image: url(../../images//metro);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 100px;
+    position: relative;
+    padding-bottom: 200px;
+}
+
+.metro::before {
+    background-color: rgba(0, 0, 0, 0.642);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
+.metro h1 {
+    padding-top: 200px;
+    font-weight: 400;
+    position: relative;
+    color: white;
+    /* Matnni oq rangda ko‘rsatish */
+    font-size: 24px;
+    z-index: 2;
+    /* Matnni yuqori qatlamga ko‘tarish */
+    text-align: center;
+}
+
+.metro h2 {
+    position: relative;
+    color: white;
+    /* Matnni oq rangda ko‘rsatish */
+    font-size: 60px;
+    z-index: 2;
+    /* Matnni yuqori qatlamga ko‘tarish */
+    text-align: center;
+}
+
+.metro button {
+    background-color: #fff;
+    border: none;
+    position: relative;
+    z-index: 2;
+    border-radius: 30px;
+    display: flex;
+    margin: 0 auto;
+    padding: 17px 40px;
+    font-size: 17px;
+    color: #22B3C1;
+}
+
+.metro button:hover {
+    background-color: #22B3C1;
+    color: #fff;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.phone {
+    padding: 25px;
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    top: 50px;
+}
+
+.metro-box {
+    position: relative;
+    top: -100px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.metro-box div {
+    padding: 5px 90px;
+    width: 250px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.metro-box span i {
+    color: #22B3C1;
+}
+
+.phon {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    left: 50%;
+}
+
+.metro-box h4 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.metro-box p {
+    color: #22B3C1;
+    text-align: center;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.map iframe {
+    border-radius: 30px 30px 0 0;
+    height: 400px;
+}
+
+.oformit p {
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    font-weight: 600;
+    padding-top: 70px;
+}
+
+.oformit {
+    background-color: #F9F9F9;
+    margin-top: -50px;
+    width: 80.2%;
+    padding-bottom: 100px;
+    border-radius: 30px;
+}
+
+.ofor {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.input input {
+    padding: 20px 200px;
+    border-radius: 30px;
+    border: solid 2px gray;
+}
+
+.input select {
+    padding: 20px 270px;
+    border-radius: 30px;
+    border: solid 2px gray;
+}
+
+.input {
+    display: grid;
+    margin-top: 30px;
+}
+
+.sel {
+    border: solid 2px gray;
+}
+
+.label {
+    display: flex;
+    justify-content: space-around;
+}
+
+.label label {
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.input label {
+    color: gray;
+    padding-bottom: 10px;
+}
+
+/* .input select{
+display: flex;
+justify-content: space-around;
+} */
+.main-button {
+    background-color: #22B3C1;
+    padding: 20px 500px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+@media (max-width:1250px) {
+    .metro-box {
+        display: grid;
+    }
+
+    .metro-box div {
+        margin-top: 50px;
+    }
+
+    .input input {
+        padding: 20px 150px;
+    }
+
+    .input select {
+        padding: 20px 150px;
+    }
+
+    .main-button {
+        padding: 20px 350px;
+        border-radius: 40px;
+    }
+}
+
+@media (max-width:1000px) {
+    .label {
+        display: block;
+    }
+
+    .main-button {
+        padding: 15px 150px;
+        border-radius: 40px;
+    }
+}
+
+@media (max-width:600px) {
+    .input input {
+        padding: 10px 50px;
+    }
+
+    .input select {
+        padding: 10px 100px;
+    }
+
+    .main-button {
+        padding: 15px 150px;
+        border-radius: 40px;
+    }
+    .metro h2{
+    font-size: 30px;
+    }
+}
+
+@media (max-width:450px) {
+    .metro-box div {
+        width: 150px;
+        height: 250px;
+    }
+
+    .phon {
+        padding: 0;
+    }
+
+    .map iframe {
+        height: 300px;
+    }
+    .main-button{
+    padding: 10px 50px;
+    }
+}
+
+@media (max-width:350px) {
+    .metro-box div {
+        width: 100px;
+        height: 250px;
+        padding: 5px 80px;
+    }
+    .input input {
+        padding: 10px 20px;
+    }
+
+    .input select {
+        padding: 10px 50px;
+    }
+}

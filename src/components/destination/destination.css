@@ -1,0 +1,204 @@
+.destination h1 {
+    font-size: 35px;
+    padding-left: 150px;
+}
+
+.destination h2 {
+    font-size: 15px;
+    color: rgb(170, 166, 166);
+    width: 550px;
+    padding-left: 150px;
+}
+.destination{
+padding-bottom: 100px;
+}
+.trail {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.trail img {
+    border-radius: 30px;
+}
+.now{
+width: 600px;
+}
+.trail h4 {
+    color: gray;
+}
+
+.trail button {
+    background-color: #22B3C1;
+    width: 180px;
+    height: 60px;
+    color: #fff;
+    font-size: 17px;
+    border: solid 2px #22B3C1;
+    border-radius: 50px;
+}
+
+.trail button:hover {
+    background-color: #fff;
+    color: #22B3C1;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.trail-btn {
+    display: flex;
+}
+
+.trail-btn button {
+    margin-left: 300px;
+    margin-top: -20px;
+}
+
+.trail h5 {
+    color: gray;
+    width: 800px;
+    line-height: 30px;
+}
+
+@media (max-width:1250px) {
+    .trail h5 {
+        width: 500px;
+    }
+
+    .trail-btn button {
+        margin-left: 150px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width:965px) {
+    .trail h5 {
+        width: 500px;
+    }
+
+    .trail img {
+        width: 300px;
+    }
+
+    .trail-btn button {
+        margin-left: 0;
+
+    }
+}
+
+@media (max-width:825px) {
+    .trail {
+        display: block;
+    }
+
+    .trail img {
+        width: 500px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .trail h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .trail h5 {
+        display: flex;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+    .res-btn{
+    display: flex;
+    justify-content: center;
+    }
+}
+
+@media (max-width:750px) {
+
+    .destination h2 {
+        padding-left: 0;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+
+    .destination h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+.trail-hr{
+    background-color: gray;
+    padding: 1px 10px;
+    margin-top: 35px;
+    opacity: .2;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.train-hr{
+    background-color: gray;
+    padding: 1px 10px;
+    opacity: .2;
+}
+.trail-hrr{
+    background-color: gray;
+    padding: 1px 10px;
+    margin-top: 35px;
+    opacity: .2;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.need{
+color: #22B3C1;
+padding-top: 20px;
+}
+.hrr{
+    background-color: gray;
+    padding: 1px 10px;
+    opacity: .4;
+    margin-top: 50px;
+}
+.train-box{
+display: flex;
+justify-content: space-around;
+}
+.train-box h6{
+color: gray;
+font-size: 15px;
+}
+
+@media (max-width:550px) {
+    .destination h2 {
+        width: 300px;
+    }
+}
+@media (max-width:600px) {
+    .now {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+}
+@media (max-width:400px) {
+    .now {
+        width: 200px;
+        font-size: 15px;
+    }
+}
+@media (max-width:500px) {
+    .trail img {
+        width: 300px;
+    }
+    .trail h5{
+    width: 300px;
+    }
+    .trail-btn button{
+    margin-top: 0;
+    }
+    .trail-btn{
+    align-items: center;
+    }
+}

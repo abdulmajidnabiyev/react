@@ -1,0 +1,199 @@
+.header {
+    background-color: #22B3C1;
+    position: fixed;
+    top: 0;
+    /* Yuqorida joylashishini ta'minlash */
+    width: 100%;
+    /* Butun kenglikda ko'rsatilishini ta'minlash */
+    z-index: 1000;
+    left: 0;
+    transition: top 0.3s ease;
+}
+/* Blur uchun CSS */
+body {
+    transition: filter 0.3s ease; /* Blur effektini silliq qilish */
+}
+
+.header.hidden {
+    top: -30px;
+}
+
+.header.visible {
+    top: 0;
+}
+
+/* Modalni o'zgartirish */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fonni dim qilish */
+    z-index: 999;
+}
+
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+/* Header uchun ko'rinish */
+.header {
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    transition: top 0.3s ease; /* Ko'rinishni animatsiya qilish */
+    z-index: 1000;
+}
+
+
+.visible {
+    transform: translateY(0);
+}
+
+.hidden {
+    transform: translateY(-100%);
+}
+.head .ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header-menu {
+    display: none;
+}
+
+.head div {
+    display: flex;
+    gap: 10px;
+}
+
+.head button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.head h1 {
+    font-size: 50px;
+    color: #fff ;
+}
+
+.ul a {
+    color: #fff;
+}
+
+.modal {
+    background:#03575f;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.modal .ul{
+padding-top: 100px;
+}
+
+.tg i,
+.insta i {
+    color: #fff;
+}
+
+header ul {
+    list-style: none !important;
+    /* Bu metodda 'important' yordamida majburiy tarzda o'zgartirish kiritamiz */
+    padding: 0 !important;
+    /* Paddingni olib tashlash */
+    margin: 0 !important;
+    /* Marginni olib tashlash */
+}
+
+.modal div {
+    display: grid;
+}
+
+.modal button {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.modal .ul div {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.modal ul li a {
+    color: #fff;
+}
+
+.close-btn i {
+    font-size: 30px;
+}
+
+/* Asosiy modal overlay stili */
+
+.ul div a {
+    text-align: center;
+}
+
+/* Modalning ichidagi oyna */
+.modal {
+   margin-top: 145px;
+
+}
+
+.close-btn {
+    display: end;
+}
+
+
+
+@media (max-width:700px) {
+    .head ul {
+        display: none;
+    }
+
+    .head div {
+        display: none;
+    }
+
+    .header-menu {
+        display: block;
+    }
+
+    .header-menu i {
+        font-size: 30px;
+    }
+
+    .head {
+        align-items: center;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+@media (min-width:700px) {
+
+    .modal,
+    .close-btn {
+        display: none;
+    }
+
+}
